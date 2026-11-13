@@ -1,0 +1,870 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7fa;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:red;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    color:white;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:yellow;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 80px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#1F2937;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#666;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.book-btn{
+    background:#2D8CFF;
+    color:white;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.book-btn:hover{
+    background:#1565C0;
+}
+
+.learn-btn{
+    background:white;
+    color:#2D8CFF;
+    border:2px solid #2D8CFF;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.learn-btn:hover{
+    background:#2D8CFF;
+    color:white;
+}
+
+.hero-image{
+    width:50%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:400px;
+}
+
+/* ================= LOGIN PAGE ================= */
+
+.login-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:85vh;
+}
+
+.login-box{
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+.login-box h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.login-box input{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.login-box button{
+    width:100%;
+    padding:15px;
+    background:#2D8CFF;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#1565C0;
+}
+
+.login-box p{
+    text-align:center;
+    margin-top:20px;
+}
+/* ================= ABOUT SECTION ================= */
+
+.about{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px;
+
+    background:#f8f9fc;
+
+}
+
+.about-image{
+
+    width:45%;
+
+    text-align:center;
+
+}
+
+.about-image img{
+
+    width:380px;
+
+    border-radius:20px;
+
+}
+
+.about-text{
+
+    width:50%;
+
+}
+
+.about-text h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+    color:#1F2937;
+
+}
+
+.about-text p{
+
+    font-size:18px;
+
+    line-height:30px;
+
+    color:#555;
+
+    margin-bottom:30px;
+
+}
+
+.about-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.feature{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:0.3s;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-5px);
+
+}
+/* ================= DOCTOR SECTION ================= */
+
+.doctor-section{
+
+    padding:80px;
+
+    background:#ffffff;
+
+    text-align:center;
+
+}
+
+.doctor-section h2{
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.doctor-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.doctor-card{
+
+    width:300px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.doctor-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.doctor-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.doctor-card h3{
+
+    margin-top:15px;
+
+    margin-bottom:10px;
+
+}
+
+.doctor-card p{
+
+    margin:8px 0;
+
+    color:#555;
+
+}
+
+.doctor-card button{
+
+    margin-top:15px;
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#2D8CFF;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.doctor-card button:hover{
+
+    background:#1565C0;
+
+}
+/* ================= APPOINTMENT ================= */
+
+.appointment{
+
+    padding:80px;
+
+    background:#f4f8ff;
+
+}
+
+.appointment h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+.appointment-form{
+
+    width:700px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea{
+
+    padding:15px;
+
+    font-size:16px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+}
+
+.appointment-form textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+.appointment-form button{
+
+    background:#2D8CFF;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.appointment-form button:hover{
+
+    background:#1565C0;
+
+}
+/* ================= PASSWORD BOX ================= */
+
+.password-box{
+
+    position:relative;
+
+    width:100%;
+
+    margin-bottom:20px;
+
+}
+
+.password-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    padding-right:50px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.password-box span{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    user-select:none;
+
+}
+/*================ SERVICES ================*/
+
+.services{
+
+    padding:80px;
+
+    background:#ffffff;
+
+    text-align:center;
+
+}
+
+.services h2{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+    color:#1F2937;
+
+}
+
+.service-title{
+
+    color:#666;
+
+    margin-bottom:50px;
+
+    font-size:18px;
+
+}
+
+.service-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#f8f9fc;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#2D8CFF;
+
+    color:white;
+
+}
+
+.service-card h3{
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+}
+
+.service-card p{
+
+    line-height:28px;
+
+}
+/*================ TESTIMONIAL ================*/
+
+.testimonial{
+
+    padding:80px;
+
+    background:#f4f8ff;
+
+    text-align:center;
+
+}
+
+.testimonial h2{
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.testimonial-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.testimonial-card{
+
+    width:320px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.testimonial-card img{
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+.testimonial-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.testimonial-card p{
+
+    color:#555;
+
+    line-height:26px;
+
+}
+.search-box{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.search-box input{
+
+    width:350px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:18px;
+
+}
+/*================ ABOUT ================*/
+
+.about{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px;
+
+    gap:50px;
+
+    background:#f8f9fc;
+
+}
+
+.about-image{
+
+    width:50%;
+
+}
+
+.about-image img{
+
+    width:50%;
+
+    border-radius:20px;
+
+}
+
+.about-text{
+
+    width:50%;
+
+}
+
+.about-text h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    font-size:18px;
+
+    line-height:30px;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+.about-text button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    background:#2D8CFF;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.about-text button:hover{
+
+    background:#1565C0;
+
+}
+/*================ CONTACT ================*/
+
+.contact{
+
+    padding:20px 80px;
+
+    background:#f5f9ff;
+
+}
+
+.contact h2{
+
+    text-align:center;
+
+    font-size:45px;
+
+    margin-bottom:60px;
+
+    color:#2D8CFF;
+
+}
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.contact-info{
+
+    width:40%;
+
+}
+
+.contact-logo{
+
+    width:120px;
+
+    margin-bottom:20px;
+
+}
+
+.contact-info h3{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+    font-size:20px;
+
+    margin:20px 0;
+
+}
+
+.contact-form{
+
+    width:60%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    font-size:18px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+}
+
+.contact-form textarea{
+
+    height:180px;
+
+    resize:none;
+
+}
+
+.contact-form button{
+
+    width:220px;
+
+    padding:18px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2D8CFF;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.contact-form button:hover{
+
+    background:#1565C0;
+
+}
